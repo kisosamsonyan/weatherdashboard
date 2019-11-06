@@ -10,15 +10,19 @@ $(document).ready(function(){
   
 
         $.ajax({
-            url: "http://api.openweathermap.org/data/2.5/weather",
+            url: "https://api.openweathermap.org/data/2.5/weather",
             dataType: 'json',
             type: 'GET',
             data: {q:city, appid: key, untis: "imperial"},
             
             success: function(data){
                 console.log(data);
-
+                var tempUnit = data.main.temp;
+                console.log(tempImperial)
+                var tempImperial = (tempUnit - 273.15) * 9/5 + 32 
+                console.log(tempImperial);
             }
+
         });
     });
 });

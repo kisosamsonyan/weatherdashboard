@@ -23,13 +23,16 @@ html, body {
 }
 
 .col-4{
+    margin-top: 70px;
+    margin-left: 50px;
     background-color: white;
-    /* width:100%; */
+  
 }
 
 .col-6{
+    margin-top: 70px;
     background-color: white;
-    margin-left: 60px;
+    margin-left: 20px;
     width:100%;
 }
 
@@ -45,7 +48,7 @@ h5{
 }
 
 #searchInput{
-    width: 130px;
+    width: 140px;
 }
 
 #searchHistory{
@@ -60,8 +63,8 @@ h5{
 #sticky-footer{
     background-color: rgb(54, 54, 54);
     width: 100%;
-    width:100%;
-    height: 30px;
+    position: fixed;
+    bottom: 0;
     
 }
 
