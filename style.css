@@ -1,0 +1,75 @@
+html, body {
+    padding:0;
+    margin:0;
+}
+
+
+
+.container-fluid{
+    background-color:rgb(54, 54, 54);
+    width: 100%;
+    text-align: center;
+}
+
+.container{
+    margin-top: 40px;
+    width: 100%;
+}
+
+.logo{
+    
+    margin: 12px;
+    color: white;
+}
+
+.col-4{
+    background-color: white;
+    /* width:100%; */
+}
+
+.col-6{
+    background-color: white;
+    margin-left: 60px;
+    width:100%;
+}
+
+h5{
+    color: rgb(83, 83, 83); 
+
+}
+
+#searchContainer{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+#searchInput{
+    width: 130px;
+}
+
+#searchHistory{
+    padding-bottom: 80px;
+    margin-bottom: 100px;
+}
+
+#historyTitle{
+    color:rgb(83, 83, 83); 
+}
+
+#sticky-footer{
+    background-color: rgb(54, 54, 54);
+    width: 100%;
+    width:100%;
+    height: 30px;
+    
+}
+
+small{
+    color: white;
+    
+}
+
+.divider{
+    width: 100%;
+}

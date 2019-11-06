@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
+    <!-- JQuery/Bootstrap CDN -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/bac9a8f734.js"></script>
+    <!-- Css -->
+    <link href="style.css" rel="stylesheet">
+   
+    <title>Weathercast</title>
+
+
+
+</head>
+
+
+
+<body background="https://images.pexels.com/photos/531972/pexels-photo-531972.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+
+        <!-- Header Container -->
+        <div class="container-fluid" >
+            <div class="row">
+                <div class="col-12">
+                   <div class="logo">
+                        <h2>Weather Dashboard</h2>
+                   </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Search City Container with History -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div id="searchContainer">
+                        <h5>Search for a City</h5>
+                        <input class="searchControl" type="text" placeholder="search" id="searchInput">
+                        <button class="searchControl" id="searchBtn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </div>
+
+                    <div id="searchHistory">
+                        <p id="historyTitle">Search History</p>
+                        <div id="cityHistory"></div>
+                    </div>
+                </div>
+
+                <!-- Current Weather Container -->
+
+                <div class="col-6">
+                    <div class="row">
+                            <div id="weatherContainer">
+                                <div id="weatherDescription">
+                                    <h2 id="cityHeader">City Name</h2>
+                                    <div id="date">date</div>
+                                    <div><img id="iconImage">icon</div>
+
+                                    <div id="weatherMain">
+                                        <div id="temperature">Temperature</div>
+                                        <div id="humidity">Humidity</div>
+                                        <div id="windSpeed">Wind Speed</div>
+                                        <div id="uvIndex">UV Index</div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+
+                    <hr class="divider">
+
+                    <!-- 5 Day Forecast -->
+                    <div class="row">
+                            <div id="weekForcast">
+                                
+                                    Week Forecast
+                                    Date 
+                                    icon
+                                    Temperature
+                                    Humidity
+
+                        
+                            </div>
+                    </div>
+
+
+                    
+                </div>
+            </div>
+        </div>
+
+
+      
+       <footer id="sticky-footer">
+            <div class="container text-center">
+                 <small>© 2019 Copyright</small>
+            </div>
+       </footer>
+                             
+
+ 
+<!-- Make sure to put the script tag at the bottom here! -->
+<script src="script.js"></script>
+
+</body>
+</html>
