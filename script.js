@@ -23,10 +23,18 @@
 $(document).ready(function(){
     $("#searchBtn").click(function(){
         var city = $("#searchInput").val();
-        $("#cityHistory").append("<li>"+city+"</li>");
+        $("#cityHistory").append("<button>"+city+"</button>");
+        
+        // $("#cityHistory").click(function(event){
+
+        //     var button =  $("#cityHistory").append("<button>"+city+"</button>");
+
+        // });
+        
+        
+        
         var key = "2f7f0622c159b6538e357020a773dfbf";
   
-
         $.ajax({
             url: "https://api.openweathermap.org/data/2.5/weather",
             dataType: 'json',
@@ -67,7 +75,7 @@ $(document).ready(function(){
                 $(humidity).html(humid);
 
                 //Displaying Wind Speed
-                var wind = "Wind: " + data.wind.speed + " " + "mph";
+                var wind = "Wind Speed: " + data.wind.speed + " " + "mph";
                 var windSpeed = $("#windSpeed");
                 $(windSpeed).html(wind);
                 
@@ -98,7 +106,7 @@ $(document).ready(function(){
         // !!!!!!!!!!!!!!!!! UV Index API 404 !!!!!!!!!!!!!!!!!!!//
         //Ajax call for UV Index
         // $.ajax ({
-        // url: "https://api.openweathermap.org/data/2.5/uvi?lat&lon",
+        // url: "http://api.openweathermap.org/data/2.5/uvi?appid=+"key"+&lat={lat}&lon={lon}",
         // dataType: 'json',
         // type: 'GET',
         // data: {appid: key},
