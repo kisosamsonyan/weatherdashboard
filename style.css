@@ -43,18 +43,19 @@ html, body {
 #date{
     margin-left: 50px;
     margin-top: 20px;
-    color:  rgb(182, 180, 180); 
+    font-size: 20px;
+    color:  rgb(95, 128, 150); 
     
 }
 
 #cityHeader{
     color: rgb(83, 83, 83); 
-    margin-left: 50px;
+    margin-left: 40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #weatherMain{
-    margin-left: 50px;
+    margin-left: 40px;
     color:rgb(83, 83, 83); 
 }
 
@@ -80,7 +81,7 @@ html, body {
 #sticky-footer{
     background-color: rgb(54, 54, 54);
     width: 100%;
-    position: fixed;
+    position: relative;
     bottom: 0;
     
 }
@@ -100,6 +101,43 @@ small{
 
 .forecastTitle{
     padding-left: 20px;
+    padding-top: 10px;
     color: rgb(83, 83, 83); 
 
 }
+
+.card{
+    background-color: rgb(208, 226, 247);
+    height: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+.card-deck{
+    margin: 20px;
+    
+}
+
+#day1{
+    margin-top: 10px;
+}
+
+#day2{
+    margin-top: 10px;
+}
+
+#day3{
+    margin-top: 10px;
+}
+
+#day4{
+    margin-top: 10px;
+}
+
+#day5{
+    margin-top: 10px;
+}
+
+
+
