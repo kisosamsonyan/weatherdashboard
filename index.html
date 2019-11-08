@@ -19,6 +19,8 @@
     <script src="https://use.fontawesome.com/bac9a8f734.js"></script>
     <!-- Css -->
     <link href="style.css" rel="stylesheet">
+    <!-- Moments Link for the Date -->
+    <script src="moment.js"></script>
    
     <title>Weathercast</title>
 
@@ -42,15 +44,18 @@
         </div>
 
         <!-- Search City Container with History -->
+        <!-- Don't forget to set up a history for the city searches using local storage -->
 
         <div class="container">
             <div class="row">
                 <div class="col-4">
                     <div id="searchContainer">
-                        <h5>Search for a City</h5>
+                        <h5>Search City</h5>
                         <input class="searchControl" type="text" placeholder="search" id="searchInput">
                         <button class="searchControl" id="searchBtn"><i class="fa fa-search" aria-hidden="true"></i></button>
                     </div>
+
+                    <hr class="historyDivider">
 
                     <div id="searchHistory">
                         <p id="historyTitle">Search History</p>
@@ -64,41 +69,77 @@
                     <div class="row">
                             <div id="weatherContainer">
                                 <div id="weatherDescription">
-                                    <h2 id="cityHeader">City Name</h2>
-                                    <div id="date">date</div>
-                                    <div><img id="iconImage">icon</div>
+                                    <div id="date"></div>
+                                    <br>
 
+                                    <h2 id="cityHeader"></h2>
+                                    <div><img id="iconImage"></div>
+                                    
                                     <div id="weatherMain">
-                                        <div id="temperature">Temperature</div>
-                                        <div id="humidity">Humidity</div>
-                                        <div id="windSpeed">Wind Speed</div>
-                                        <div id="uvIndex">UV Index</div>
+                                        <div id="temperature"></div>
+                                        <div id="humidity"></div>
+                                        <div id="windSpeed"></div>
+                                        <div id="uvIndex"></div>
                                         
                                     </div>
                                 </div>
                             </div>
                     </div>
 
-                    <hr class="divider">
-
-                    <!-- 5 Day Forecast -->
-                    <div class="row">
-                            <div id="weekForcast">
-                                
-                                    Week Forecast
-                                    Date 
-                                    icon
-                                    Temperature
-                                    Humidity
-
-                        
-                            </div>
-                    </div>
-
-
-                    
                 </div>
             </div>
+
+                    <!-- 5 Day Forecast -->
+            <div class="row">
+                <div class="col-12">
+                    <div id="weekForecast">
+                        <div class="forecastTitle" >
+                            <h6>5-Day Forecast:</h6>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div id="day1"></div>
+                                <div id="icon1"></div>
+                                <div id="temp1"></div>
+                                <div id="humid1"></div>
+                            </div>
+
+                            <div class="col">
+                                <div id="day2"></div>
+                                <div id="icon2"></div>
+                                <div id="temp2"></div>
+                                <div id="humid2"></div>
+                            </div>
+
+                            <div class="col">
+                                <div id="day3"></div>
+                                <div id="icon3"></div>
+                                <div id="temp3"></div>
+                                <div id="humid3"></div>
+                            </div>
+
+                            <div class="col">
+                                <div id="day4"></div>
+                                <div id="icon4"></div>
+                                <div id="temp4"></div>
+                                <div id="humid4"></div>
+                            </div>
+
+                            <div class="col">
+                                <div id="day4"></div>
+                                <div id="icon4"></div>
+                                <div id="temp4"></div>
+                                <div id="humid4"></div>
+                            </div>
+                        
+                        </div>
+                
+                    </div>
+                </div>
+            </div>
+
+
         </div>
 
 

@@ -23,22 +23,39 @@ html, body {
 }
 
 .col-4{
-    margin-top: 70px;
-    margin-left: 50px;
+    margin-top: 0px;
+    margin-left: 30px;
     background-color: white;
+  
   
 }
 
 .col-6{
-    margin-top: 70px;
+    margin-top: 0px;
     background-color: white;
     margin-left: 20px;
     width:100%;
+    text-align: center;
 }
 
-h5{
-    color: rgb(83, 83, 83); 
 
+
+#date{
+    margin-left: 50px;
+    margin-top: 20px;
+    color:  rgb(182, 180, 180); 
+    
+}
+
+#cityHeader{
+    color: rgb(83, 83, 83); 
+    margin-left: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#weatherMain{
+    margin-left: 50px;
+    color:rgb(83, 83, 83); 
 }
 
 #searchContainer{
@@ -73,6 +90,16 @@ small{
     
 }
 
-.divider{
+
+#weekForecast{
     width: 100%;
+    margin-top: 40px;
+    background-color: white;
+
+}
+
+.forecastTitle{
+    padding-left: 20px;
+    color: rgb(83, 83, 83); 
+
 }
